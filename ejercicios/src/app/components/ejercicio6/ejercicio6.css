@@ -1,0 +1,14 @@
+.contenedor {
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+input[type="color"] {
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+}
