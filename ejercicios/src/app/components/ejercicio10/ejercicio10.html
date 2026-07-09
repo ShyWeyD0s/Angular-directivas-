@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (p of productos; track p.nombre) {
+        <tr [class.agotado]="!p.disponible" [class.disponible]="p.disponible">
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.categoria }}</td>
+            <td>{{ p.precio | currency:'USD' }}</td>
+            <td>{{ p.disponible ? 'Disponible' : 'Agotado' }}</td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+.semaforo-caja {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+    /* Cambio suave de color */
+    border: 5px solid #333;
+}

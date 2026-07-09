@@ -7,10 +7,12 @@ import { Ejercicio5 } from './components/ejercicio5/ejercicio5';
 import { Ejercicio6 } from './components/ejercicio6/ejercicio6';
 import { Ejercicio7 } from './components/ejercicio7/ejercicio7';
 import { Ejercicio8 } from './components/ejercicio8/ejercicio8';
+import { Ejercicio9 } from './components/ejercicio9/ejercicio9';
+import { Ejercicio10 } from './components/ejercicio10/ejercicio10';
 
 @Component({
   selector: 'app-root',
-  imports: [TareaComponent, Ejercicio2, Ejercicio3, Ejercicio4, Ejercicio5, Ejercicio6, Ejercicio7, Ejercicio8],
+  imports: [TareaComponent, Ejercicio2, Ejercicio3, Ejercicio4, Ejercicio5, Ejercicio6, Ejercicio7, Ejercicio8, Ejercicio9, Ejercicio10],
   templateUrl: './app.html',
   styleUrl: './app.css'
 
