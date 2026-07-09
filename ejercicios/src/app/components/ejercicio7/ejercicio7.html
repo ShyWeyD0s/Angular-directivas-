@@ -1,0 +1,12 @@
+<div class="contenedor" [ngClass]="{ 'modo-oscuro': esModoOscuro, 'modo-claro': !esModoOscuro }">
+
+    <button (click)="alternarTema()">
+        Alternar Tema
+    </button>
+
+    <h2>Título</h2>
+    <p>
+        Este párrafo cambiará según el tema seleccionado.
+        Todo el contenedor se adapta gracias a [ngClass].
+    </p>
+</div>
