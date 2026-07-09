@@ -1,0 +1,9 @@
+<div class="contenedor">
+  <label>Escribe aquí (máx 10):</label>
+  <input 
+    type="text" 
+    [(ngModel)]="texto" 
+    [class.error-fondo]="haExcedido">
+
+  <p>Longitud actual: {{ texto.length }}</p>
+</div>

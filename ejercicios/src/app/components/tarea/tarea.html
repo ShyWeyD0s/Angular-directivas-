@@ -1,0 +1,8 @@
+<h3>Lista de Tareas</h3>
+
+<ul>
+  <li *ngFor="let tarea of tareas" [ngClass]="{'tarea-completada': tarea.completada}">
+    <input type="checkbox" [(ngModel)]="tarea.completada">
+    {{ tarea.titulo }}
+  </li>
+</ul>

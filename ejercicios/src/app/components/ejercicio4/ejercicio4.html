@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <button (click)="toggleEstilo()">
+    {{ estaResaltado ? 'Quitar estilos' : 'Aplicar estilos' }}
+  </button>
+
+  <ul>
+    <li *ngFor="let item of elementos" [class.resaltado]="estaResaltado">
+      {{ item }}
+    </li>
+  </ul>
+</div>

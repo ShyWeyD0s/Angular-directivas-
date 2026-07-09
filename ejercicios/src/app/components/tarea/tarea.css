@@ -1,0 +1,9 @@
+.tarea-completada {
+    background-color: rgb(56, 250, 56);
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
