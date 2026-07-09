@@ -1,14 +1,10 @@
 <div class="contenedor">
-    <button (click)="alternarEstilo()">
-        {{ esEstiloModerno ? 'Estilo Clásico' : 'Estilo Moderno' }}
-    </button>
+    <h3>Alternador de Estilos</h3>
 
-    <div class="tarjeta" [ngClass]="{'moderno': esEstiloModerno, 'clasico': !esEstiloModerno}">
-        <h3>Título de la Tarjeta</h3>
-        <p>
-            Esta es una tarjeta de contenido.
-            Observa cómo cambia su estilo
-            al hacer clic en el botón de arriba.
-        </p>
-    </div>
+    <input type="text" placeholder="Escribe algo aquí..."
+        [ngClass]="esEstiloModerno ? 'estilo-moderno' : 'estilo-clasico'">
+
+    <button (click)="alternarEstilo()">
+        Cambiar Estilo
+    </button>
 </div>
